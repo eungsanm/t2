@@ -1,0 +1,11 @@
+namespace t2.Application.DTOs.Book
+{
+    public class CreateBookDto
+    {
+        public string Title { get; set; } = string.Empty;
+        public string Author { get; set; } = string.Empty;
+        public string ISBN { get; set; } = string.Empty;
+        public int Stock { get; set; }
+    }
+}
+

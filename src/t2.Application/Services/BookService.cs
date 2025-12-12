@@ -105,7 +105,7 @@ namespace t2.Application.Services
                         {
                             BookId = id,
                             FechaBaja = DateTime.Now,
-                            Motivo = "Eliminado - sin stock disponible",
+                            Motivo = "Eliminado",
                             CreatedAt = DateTime.Now
                         };
 
@@ -139,7 +139,7 @@ namespace t2.Application.Services
             {
                 throw new BusinessRuleException(
                     "BookAlreadyBaja",
-                    $"Book with ID {id} has already been given de baja.");
+                    $"Libro con {id} dado de baja");
             }
 
             try

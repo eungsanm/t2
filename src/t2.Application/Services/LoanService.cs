@@ -41,7 +41,7 @@ namespace t2.Application.Services
             if (book.Stock == 0)
             {
                 throw new BusinessRuleException(
-                    "Stock no es suficiente",
+                    "Stock insuficiente",
                     $"ID {dto.BookId} no tiene stock");
             }
 
